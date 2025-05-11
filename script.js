@@ -14,6 +14,7 @@ function fetchProfile() {
                     <p>Public Repos: ${data.public_repos}</p>
                     <a href="${data.html_url}" target="_blank">Visit Profile</a>
                 `;
+      console.log(data);
     })
     .catch((error) => alert("Error fetching profile. Please try again."));
 }
